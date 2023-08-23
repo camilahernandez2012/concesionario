@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="527.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.uqvirtual.proyectofinal.controllers.LoginController">
+   <children>
+      <Label layoutX="112.0" layoutY="35.0" text="Bienvenido">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Separator layoutX="46.0" layoutY="92.0" prefHeight="7.0" prefWidth="299.0" />
+      <Label layoutX="24.0" layoutY="154.0" text="Usuario:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="197.0" text="Contraseña:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsuario" layoutX="117.0" layoutY="154.0" />
+      <PasswordField fx:id="txtPassword" layoutX="116.0" layoutY="197.0" />
+      <Label layoutX="25.0" layoutY="241.0" text="Rol:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbBoxRol" layoutX="116.0" layoutY="241.0" prefWidth="150.0" />
+      <Button fx:id="bttIngresar" layoutX="131.0" layoutY="300.0" mnemonicParsing="false" onAction="#btt_Ingresar_Action_Login" prefHeight="25.0" prefWidth="119.0" text="Ingresar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bttSalir" layoutX="140.0" layoutY="392.0" mnemonicParsing="false" onAction="#btt_Salir_Action_Login" prefHeight="25.0" prefWidth="101.0" text="Salir">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="lbltxtRecuoerarPass" layoutX="109.0" layoutY="487.0" onAction="#hyper_RemenberPass_Action_Login" text="¿Has olvidado tu contraseña?" />
+      <AnchorPane layoutX="381.0" layoutY="-1.0" prefHeight="532.0" prefWidth="457.0" style="-fx-background-color: #86BFFF;" />
+   </children>
+</AnchorPane>

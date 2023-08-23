@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_111" class="java.beans.XMLDecoder">
+ <object class="co.edu.uniquindio.uqvirtual.proyectofinal.models.Empresa" id="Empresa0">
+  <void property="listaUsuarios">
+   <void method="add">
+    <object class="co.edu.uniquindio.uqvirtual.proyectofinal.models.Usuario">
+     <void property="codigo">
+      <string>1104544039</string>
+     </void>
+     <void property="contrasena">
+      <string>admin</string>
+     </void>
+     <void property="email">
+      <string>camila@gmail.com</string>
+     </void>
+     <void property="estado">
+      <boolean>true</boolean>
+     </void>
+     <void property="name">
+      <string>camila</string>
+     </void>
+     <void property="preguntaSeguridad">
+      <string>que</string>
+     </void>
+     <void property="respuesta">
+      <string>so</string>
+     </void>
+     <void property="rol">
+      <object class="java.lang.Enum" method="valueOf">
+       <class>co.edu.uniquindio.uqvirtual.proyectofinal.models.RolUsuario</class>
+       <string>ADMIN</string>
+      </object>
+     </void>
+     <void property="username">
+      <string>admin</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.uqvirtual.proyectofinal.models.Usuario">
+     <void property="codigo">
+      <string>1234</string>
+     </void>
+     <void property="contrasena">
+      <string>seba</string>
+     </void>
+     <void property="email">
+      <string>seba@gmail.com</string>
+     </void>
+     <void property="estado">
+      <boolean>true</boolean>
+     </void>
+     <void property="name">
+      <string>seb</string>
+     </void>
+     <void property="preguntaSeguridad">
+      <string>que</string>
+     </void>
+     <void property="respuesta">
+      <string>so</string>
+     </void>
+     <void property="rol">
+      <object class="java.lang.Enum" method="valueOf">
+       <class>co.edu.uniquindio.uqvirtual.proyectofinal.models.RolUsuario</class>
+       <string>VENDEDOR</string>
+      </object>
+     </void>
+     <void property="username">
+      <string>seba</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.uqvirtual.proyectofinal.models.Usuario">
+     <void property="codigo">
+      <string>4321</string>
+     </void>
+     <void property="contrasena">
+      <string>san</string>
+     </void>
+     <void property="email">
+      <string>san@gmail.com</string>
+     </void>
+     <void property="estado">
+      <boolean>true</boolean>
+     </void>
+     <void property="name">
+      <string>san</string>
+     </void>
+     <void property="preguntaSeguridad">
+      <string>que</string>
+     </void>
+     <void property="respuesta">
+      <string>so</string>
+     </void>
+     <void property="rol">
+      <object class="java.lang.Enum" method="valueOf">
+       <class>co.edu.uniquindio.uqvirtual.proyectofinal.models.RolUsuario</class>
+       <string>GESTION_DE_CAJA</string>
+      </object>
+     </void>
+     <void property="username">
+      <string>san</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="listaVehiculos">
+   <void method="add">
+    <object class="co.edu.uniquindio.uqvirtual.proyectofinal.models.Moto">
+     <void property="cantidad">
+      <int>1000</int>
+     </void>
+     <void property="cilindraje">
+      <int>150</int>
+     </void>
+     <void property="marca">
+      <string>Yamaha</string>
+     </void>
+     <void property="modelo">
+      <int>2001</int>
+     </void>
+     <void property="numRuedas">
+      <int>2</int>
+     </void>
+     <void property="placa">
+      <string>msl-123</string>
+     </void>
+     <void property="precio">
+      <double>16321.0</double>
+     </void>
+     <void property="referencia">
+      <string>asdad</string>
+     </void>
+     <void property="tamTanque">
+      <double>400.0</double>
+     </void>
+     <void property="tipoVehiculo">
+      <object class="java.lang.Enum" method="valueOf">
+       <class>co.edu.uniquindio.uqvirtual.proyectofinal.models.TipoVehiculo</class>
+       <string>MOTO</string>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.uqvirtual.proyectofinal.models.Auto">
+     <void property="cantidad">
+      <int>1000</int>
+     </void>
+     <void property="gasolina">
+      <boolean>true</boolean>
+     </void>
+     <void property="marca">
+      <string>Renault</string>
+     </void>
+     <void property="modelo">
+      <int>2006</int>
+     </void>
+     <void property="numPuertas">
+      <int>3</int>
+     </void>
+     <void property="numRuedas">
+      <int>4</int>
+     </void>
+     <void property="placa">
+      <string>QHF-355</string>
+     </void>
+     <void property="precio">
+      <double>900000.0</double>
+     </void>
+     <void property="referencia">
+      <string>Twingo</string>
+     </void>
+     <void property="tipoVehiculo">
+      <object class="java.lang.Enum" method="valueOf">
+       <class>co.edu.uniquindio.uqvirtual.proyectofinal.models.TipoVehiculo</class>
+       <string>AUTO</string>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.uqvirtual.proyectofinal.models.Camion">
+     <void property="cantidad">
+      <int>10000</int>
+     </void>
+     <void property="capCarga">
+      <double>5000.0</double>
+     </void>
+     <void property="marca">
+      <string>SHACMAN</string>
+     </void>
+     <void property="modelo">
+      <int>2019</int>
+     </void>
+     <void property="numRuedas">
+      <int>6</int>
+     </void>
+     <void property="placa">
+      <string>DAS-4321</string>
+     </void>
+     <void property="precio">
+      <double>1000000.0</double>
+     </void>
+     <void property="referencia">
+      <string>camion</string>
+     </void>
+     <void property="tipoVehiculo">
+      <object class="java.lang.Enum" method="valueOf">
+       <class>co.edu.uniquindio.uqvirtual.proyectofinal.models.TipoVehiculo</class>
+       <string>CAMION</string>
+      </object>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="535.0" prefWidth="975.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="co.edu.uniquindio.uqvirtual.proyectofinal.controllers.CajaViewController">
+   <children>
+      <TableView fx:id="tblFactu" layoutX="64.0" layoutY="146.0" prefHeight="200.0" prefWidth="162.0">
+        <columns>
+          <TableColumn fx:id="colCod" prefWidth="75.0" text="Codigo" />
+          <TableColumn fx:id="colPrec" prefWidth="75.0" text="Precio" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="27.0" text="Facturas">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Separator layoutX="50.0" layoutY="72.0" prefHeight="9.0" prefWidth="368.0" />
+      <Label layoutX="64.0" layoutY="119.0" text="Faturas generadas:" />
+      <Label layoutX="524.0" layoutY="387.0" text="Valor total vendido:" />
+      <Label layoutX="524.0" layoutY="415.0" text="Valor total vendido Motos:" />
+      <Label layoutX="524.0" layoutY="443.0" text="Valor total vendido Autos:" />
+      <Label layoutX="524.0" layoutY="472.0" text="Valor total vendido Camiones:" />
+      <TextField fx:id="txtTotal" editable="false" layoutX="701.0" layoutY="383.0" />
+      <TextField fx:id="txtMotos" editable="false" layoutX="701.0" layoutY="411.0" />
+      <TextField fx:id="txtAutos" editable="false" layoutX="701.0" layoutY="439.0" />
+      <TextField fx:id="txtCamiones" editable="false" layoutX="701.0" layoutY="468.0" />
+      <TableView fx:id="tblTapVehiculos_Disponibles" layoutX="324.0" layoutY="117.0" prefHeight="259.0" prefWidth="609.0">
+         <columns>
+            <TableColumn fx:id="colm_placa_tblTapVehiculos_Disponibles" prefWidth="57.0" text="Placa" />
+            <TableColumn fx:id="colm_marca_tblTapVehiculos_Disponibles" prefWidth="93.0" text="Marca" />
+            <TableColumn fx:id="colm_referencia_tblTapVehiculos_Disponibles" prefWidth="75.0" text="Referencia" />
+            <TableColumn fx:id="colm_modelo_tblTapVehiculos_Disponibles" prefWidth="75.0" text="Modelo" />
+            <TableColumn fx:id="colm_precio_tblTapVehiculos_Disponibles" prefWidth="75.0" text="Precio" />
+            <TableColumn fx:id="colm_numRuedas_tblTapVehiculos_Disponibles" prefWidth="62.0" text="N°ruedas" />
+            <TableColumn fx:id="colm_tipoVehiculo_tblTapVehiculos_Disponibles" prefWidth="103.0" text="Tipo Vehiculo" />
+            <TableColumn fx:id="colm_Cantidad_tblTapVehiculos1" prefWidth="67.0" text="Cantidad" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

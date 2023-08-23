@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="534.0" prefWidth="1409.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.uqvirtual.proyectofinal.controllers.VendedorViewController">
+   <children>
+      <Label layoutX="639.0" layoutY="14.0" text="Ventas">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <SplitPane layoutX="5.0" layoutY="75.0" prefHeight="452.0" prefWidth="1318.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="16.0">
+         <items>
+            <AnchorPane prefHeight="425.0" prefWidth="1306.0">
+               <children>
+                  <Label layoutX="748.0" layoutY="25.0" text="Carrito:" underline="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="25.0" text="Vehiculos disponibles:" underline="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tblTapVehiculos_Carrito" layoutX="748.0" layoutY="68.0" prefHeight="259.0" prefWidth="621.0" AnchorPane.leftAnchor="748.0">
+                     <columns>
+                        <TableColumn fx:id="colm_placa_tblTapVehiculos_Carrito" prefWidth="57.0" text="Placa" />
+                        <TableColumn fx:id="colm_marca_tblTapVehiculos_Carrito" prefWidth="93.0" text="Marca" />
+                        <TableColumn fx:id="colm_referencia_tblTapVehiculos_Carrito" prefWidth="75.0" text="Referencia" />
+                        <TableColumn fx:id="colm_modelo_tblTapVehiculos_Carrito" prefWidth="75.0" text="Modelo" />
+                        <TableColumn fx:id="colm_precio_tblTapVehiculos_Carrito" prefWidth="75.0" text="Precio" />
+                        <TableColumn fx:id="colm_numRuedas_tblTapVehiculos_Carrito" prefWidth="62.0" text="N°ruedas" />
+                        <TableColumn fx:id="colm_tipoVehiculo_tblTapVehiculos_Carrito" prefWidth="103.0" text="Tipo Vehiculo" />
+                        <TableColumn fx:id="colm_Cantidad_tblTapVehiculos_Carrito" prefWidth="67.0" text="Cantidad" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tblTapVehiculos_Disponibles" layoutX="28.0" layoutY="68.0" prefHeight="259.0" prefWidth="609.0" AnchorPane.leftAnchor="28.0">
+                     <columns>
+                        <TableColumn fx:id="colm_placa_tblTapVehiculos_Disponibles" prefWidth="57.0" text="Placa" />
+                        <TableColumn fx:id="colm_marca_tblTapVehiculos_Disponibles" prefWidth="93.0" text="Marca" />
+                        <TableColumn fx:id="colm_referencia_tblTapVehiculos_Disponibles" prefWidth="75.0" text="Referencia" />
+                        <TableColumn fx:id="colm_modelo_tblTapVehiculos_Disponibles" prefWidth="75.0" text="Modelo" />
+                        <TableColumn fx:id="colm_precio_tblTapVehiculos_Disponibles" prefWidth="75.0" text="Precio" />
+                        <TableColumn fx:id="colm_numRuedas_tblTapVehiculos_Disponibles" prefWidth="62.0" text="N°ruedas" />
+                        <TableColumn fx:id="colm_tipoVehiculo_tblTapVehiculos_Disponibles" prefWidth="168.0" text="Tipo Vehiculo" />
+                        <TableColumn fx:id="colm_Cantidad_tblTapVehiculos1" minWidth="2.0" prefWidth="2.0" text="Cantidad" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="btt_LimpiarConsultarVehiculo" layoutX="480.0" layoutY="411.0" mnemonicParsing="false" onAction="#btt_action_LimpiarConsultarVehiculo" prefHeight="25.0" prefWidth="82.0" text="Limpiar" />
+                  <Button fx:id="bttConsultarVehiculo" layoutX="386.0" layoutY="411.0" mnemonicParsing="false" onAction="#btt_action_ConsultarVehiculo" prefHeight="25.0" prefWidth="81.0" text="Consultar" />
+                  <Label layoutX="34.0" layoutY="379.0" text="Marca:" />
+                  <TextField fx:id="txt_Precio_Buaqueda" layoutX="386.0" layoutY="376.0" prefHeight="25.0" prefWidth="176.0" />
+                  <Label layoutX="34.0" layoutY="415.0" text="Referencia:" />
+                  <TextField fx:id="txt_Referencia_Buaqueda" layoutX="99.0" layoutY="411.0" prefHeight="25.0" prefWidth="176.0" />
+                  <TextField fx:id="txt_Modelo_Buaqueda" layoutX="386.0" layoutY="341.0" prefHeight="25.0" prefWidth="176.0" />
+                  <Label layoutX="330.0" layoutY="345.0" text="Modelo:" />
+                  <TextField fx:id="txt_Marca_Buaqueda" layoutX="99.0" layoutY="376.0" prefHeight="25.0" prefWidth="175.0" />
+                  <Label layoutX="330.0" layoutY="379.0" text="Precio:" />
+                  <Label layoutX="34.0" layoutY="345.0" text="Placa:" />
+                  <TextField fx:id="txt_Placa_Buaqueda" layoutX="99.0" layoutY="341.0" prefHeight="25.0" prefWidth="175.0" />
+                  <Separator layoutX="571.0" layoutY="326.0" orientation="VERTICAL" prefHeight="124.0" prefWidth="6.0" />
+                  <Button fx:id="bttAgregar" layoutX="655.0" layoutY="156.0" mnemonicParsing="false" onAction="#bttAgregar_Action" text="Agregar&gt;&gt;" />
+                  <Button fx:id="bttQuitar" layoutX="655.0" layoutY="194.0" mnemonicParsing="false" onAction="#bttQuitar_Action" prefHeight="25.0" prefWidth="76.0" text="&lt;&lt;Quitar" />
+                  <Button fx:id="bttGenerarVenta" layoutX="1029.0" layoutY="350.0" mnemonicParsing="false" onAction="#bttGenerarVenta_Action" text="Generar">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bttLimpiarCarrito" layoutX="1029.0" layoutY="396.0" mnemonicParsing="false" onAction="#bttGLimpiarCarrito_Action" prefHeight="38.0" prefWidth="84.0" text="Limpiar">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
